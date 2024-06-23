@@ -4,7 +4,7 @@ const fs = require('fs');
 const request = require('request');
 
 module.exports.config = {
-  name: "randomReact",
+  name: "React",
   version: "69",
   credits: "Aesther",
 };
