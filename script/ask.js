@@ -40,7 +40,7 @@ module.exports.run = async function ({ api, event, args }) {
         apiName = 'Backup Axios';
     }
 
-    if (!content) return api.sendMessage("🏖️〽️ᗩƐ-ᔕƬHƐᖇ〽️🏖️\n\nHello Dummy ✌️?", event.threadID, event.messageID);
+    if (!content) return api.sendMessage("🏖️ DJIBRIL 🏖️\n\n salut tout le monde ✌️?", event.threadID, event.messageID);
 
     try {
         api.sendMessage(``, event.threadID, event.messageID);
@@ -61,7 +61,7 @@ module.exports.run = async function ({ api, event, args }) {
         const totalRequestCount = await getTotalRequestCount();
         const userNames = await getUserNames(api, uid);
 
-        const responseMessage = `♡   ∩_∩\n    （„• ֊ •„)♡\n┏━∪∪━━━━ღ❦ღ┓\n${result} ≛\n♡  ᗩƐ-ᔕƬHƐᖇ-[📩]\n┗ღ❦ღ━━━━━━━┛\n[✦]| ${userNames.join(', ')}`;
+        const responseMessage = `♡   ∩_∩\n    （„• ֊ •„)♡\n┏━∪∪━━━━ღ❦ღ┓\n${result} ≛\nDJIBRIL[📩]\n┗ღ❦ღ━━━━━━━┛\n[✦]| ${userNames.join(', ')}`;
         api.sendMessage(responseMessage, event.threadID, event.messageID);
 
         await saveAxiosStatus(apiName);
