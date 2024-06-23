@@ -40,7 +40,7 @@ module.exports.run = async function ({ api, event, args }) {
         apiName = 'Backup Axios';
     }
 
-    if (!content) return api.sendMessage("🏖️ DJIBRIL 🏖️\n\n salut tout le monde ✌️?", event.threadID, event.messageID);
+    if (!content) return api.sendMessage("🏖️ DJIBRIL 🏖️\n\n salut tout le monde ✌️ quel est vôtre question ?", event.threadID, event.messageID);
 
     try {
         api.sendMessage(``, event.threadID, event.messageID);
